@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ChildComponent2 = ({theme}) => {
+const ChildComponent2 = React.memo ( ({theme}) => {
 
     console.log("Child component 2 rendered !!", theme)
 
@@ -15,6 +15,6 @@ const ChildComponent2 = ({theme}) => {
 
     </div>
   )
-}
+} )
 
 export default ChildComponent2
